@@ -1,0 +1,119 @@
+* {
+	font-family:Arial;
+}
+body {
+	margin:0;
+	padding:0;
+	background-color: #bebebe;
+}
+.linha{
+	position: relative; 
+	float:left;
+	left: 0%;
+	width: 100%;
+	height: auto;
+	text-align: justify;
+}
+.coluna_3{
+	position: relative;
+	float:left;
+	left:0%;
+	text-align: center;
+	width: 33.333%;
+	height: 220px;
+	background-color: #ffffff;
+	margin-top: 2%;
+	margin-bottom: 4%;
+}
+
+img.gabinetes{	
+	width: 176px;
+	height: 176px;
+}
+
+img.banner{	
+	width: 100%;
+	height: 252px;
+}
+		
+/* FORMATAÇÃO DE FORMULÁRIO */
+
+/* Faz ignorar as larguras das bordas e padding */
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}	
+
+fieldset{
+	position:relative;
+	float:left;
+	left:50%;
+	width: 50%;
+	margin-left: -25%;
+	height:auto;
+	border: 1px solid red;
+	font-size:15px;
+	padding: 10px;
+	background-color: white;
+}
+
+legend{
+	font-weight: bolder;
+	font-size:20px;
+}
+
+label.leg {
+	position:relative;
+	float:left;
+	left:0%;
+	width: 35%;
+	height:auto;
+	border: 0px solid red;
+	font-size:15px;
+	margin: 2px 0px 2px 0px;
+}
+
+div{
+	position:relative;
+	float:left;
+	left:0%;
+	width: 100%;
+	height:auto;
+	border: 0px solid #bebebe;
+}	
+
+div#caixas{
+	text-align:center;
+}	
+
+input.texto{
+	position:relative;
+	float:left;
+	left:0%;
+	width: 65%;
+	height:auto;
+	border: 1px solid black;
+	margin: 2px 0px 2px 0px;
+}
+
+textarea{
+	position:relative;
+	float:left;
+	left:0%;
+	width: 100%;
+	height:200px;
+	border: 1px solid black;
+	margin: 2px 0px 2px 0px;
+	resize: none;
+}
+
+h3{
+	position:relative;
+	float:left;
+	left:0%;
+	width: 100%;
+	height:auto;
+	font-size: 15px;
+	margin: 10px 0px 5px 0px;
+}	

@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="./css/style.css">  
+		<script src="./js/jquery.js"></script>
+		<script type="text/javascript" src="./js/script.js"></script>      
+		<title>Elementos de formulário HTML</title>  
+		
+	</head>
+	<body>
+            <!---ALTERAR O CAMINHO DESTINO DO PHP--->
+		<form  name="form1" action="./php/destino.php" method="GET">
+  
+			<fieldset>
+			
+				<legend>Monte o seu computador</legend>
+
+				<div class="linha">
+					<img class="banner" src="./images/monte.jpg" >
+				</div>
+				
+					<h3>Dados pessoais</h3>
+				
+					<div>
+					<label class="leg" for="nomeUser">Nome</label>
+					<input class="texto" type="text" name="nomeUser" id="nomeUser" value="Informe seu nome completo" onClick="value=''">
+					</div>
+					
+					<div>					
+					<label class="leg" for="telefoneUser">Telefone para contato</label>					
+					<input class="texto" type="text" name="telefoneUser" id="telefoneUser" onClick="value=''">
+					</div>
+					
+					<div>					
+					<label class="leg" for="emailUser">E-mail</label>
+					<input class="texto" type="email" name="emailUser" id="emailUser" onClick="value=''">
+					</div>
+
+					<h3>Escolha seu gabinete:</h3>		
+
+					<div class="linha">	
+						
+                        <div class="coluna_3">
+							<label>R$250,00</label>
+							<img class="gabinetes" src="./images/gabinete1.png" alt="Gabinete Led azul"><br>
+							<label for="gabinete1">Gabinete MyMax - Branco</label>
+							<input type="checkbox" name="gabinetes" value="ok"><br>
+							<input type="button" onclick="Gabinete1()" value="informações" />
+						</div>			
+
+						<div class="coluna_3">
+							<label>R$ 200,00</label>
+							<img class="gabinetes" src="./images/gabinete2.png" alt="Gabinete Padrão"><br>
+							<label for="gabinete2">Gabinete Padrão</label>
+							<input type="checkbox" name="gabinetes" value="ok"><br>
+							<input type="button" onclick="Gabinete2()" value="informações" />
+						</div>
+
+						<div class="coluna_3">
+							<label>R$ 300,00</label>
+							<img class="gabinetes" src="./images/gabinete3.png" alt="Gabinete Led azul"><br>
+							<label for="gabinete3">Gabinete MyMax - Preto</label>
+							<input type="checkbox" name="gabinetes" value="ok"><br>
+							<input type="button" onclick="Gabinete3()" value="informações"/>
+						</div>
+					</div>
+	
+					<h3>Escolha sua memória:</h3>		
+
+					<div class="linha">	
+						
+                        <div class="coluna_3">
+							<label>R$ 331,66</label>
+							<img class="gabinetes" src="./images/8gb.jpg" alt="Corsair Vengeance"><br>
+							<label for="memo8">DDR3 CORSAIR 8GB</label>
+							<input type="checkbox" name="memo8" value="ok"><br>
+						</div>			
+						
+						<div class="coluna_3">
+							<label>R$ 688,51</label>
+							<img class="gabinetes" src="./images/16gb.jpg" alt="Crucial Ballistix Sport"><br>
+							<label for="memo16">DDR4 BALLISTIX 16GB</label>
+							<input type="checkbox" name="memo16" value="ok"><br>
+						</div>
+						
+						<div class="coluna_3">
+							<label>R$ 1.391,13</label>
+							<img class="gabinetes" src="./images/32gb.jpg" alt="G.Skill Ripjaws v"><br>
+							<label for="memo32">DDR4 RIPJAWS 32GB</label>
+							<input type="checkbox" name="memo32" value="ok"><br>
+						</div>
+					</div>
+
+					<h3>Escolha seu HD:</h3>		
+
+					<div class="linha">	
+						
+                        <div class="coluna_3">
+							<label>R$ 224,13</label>
+							<img class="gabinetes" src="./images/memo500.png" alt="WESTERN DIGITAL CAVIAR BLUE"><br>
+							<label for="hd1">Western Digital Caviar Blue - 500GB</label>
+							<input type="checkbox" name="hd1" value="ok"><br>
+						</div>			
+
+						<div class="coluna_3">
+							<label>R$ 255,20</label>
+							<img class="gabinetes" src="./images/memo1.png" alt="WESTERN DIGITAL CAVIAR BLUE"><br>
+							<label for="hd2">Western Digital Caviar Blue - 1TB</label>
+							<input type="checkbox" name="hd2" value="ok"><br>
+						</div>
+
+						<div class="coluna_3">
+							<label>R$ 646,27</label>
+							<img class="gabinetes" src="./images/memo2.png" alt="WESTERN DIGITAL CAVIAR BLACK"><br>
+							<label for="hd3">Western Digital Caviar Black - 2TB</label>
+							<input type="checkbox" name="hd3" value="ok"><br>
+						</div>
+					</div>
+
+					<h3>Escolha seu processador:</h3>		
+
+					<div class="linha">	
+						
+                        <div class="coluna_3">
+							<label>R$ 659,00</label>
+							<img class="gabinetes" src="./images/i3.jpg" alt="PROCESSADOR INTEL CORE I3"><br>
+							<label for="Proc1">Processador Intel Core - I3</label>
+							<input type="checkbox" name="Proc1" value="ok"><br>
+						</div>			
+
+						<div class="coluna_3">
+							<label>R$ 1.147,08</label>
+							<img class="gabinetes" src="./images/i5.jpg" alt="PROCESSADOR INTEL CORE I5"><br>
+							<label for="Proc1">Processador Intel Core - I5</label>
+							<input type="checkbox" name="Proc2" value="ok"><br>
+						</div>
+
+						<div class="coluna_3">
+							<label>R$ 1.849,00</label>
+							<img class="gabinetes" src="./images/i7.png" alt="PROCESSADOR INTEL CORE I7"><br>
+							<label for="Proc3">Processador Intel Core - I7</label>
+							<input type="checkbox" name="Proc3" value="ok"><br>
+						</div>
+					</div>
+
+					<h3>Escolha sua placa de vídeo:</h3>		
+
+					<div class="linha">	
+						
+                        <div class="coluna_3">
+							<label>R$ 699,00</label>
+							<img class="gabinetes" src="./images/placa1.png" alt="RADEON"><br>
+							<label for="pla1">Radeon RX570 Gaming 4gb GDDR5</label>
+							<input type="checkbox" name="pla1" value="ok"><br>
+						</div>			
+						
+						<div class="coluna_3">
+							<label>R$ 1.574,15</label>
+							<img class="gabinetes" src="./images/placa2.jpg" alt="GIGABYTE AORUS RADEON"><br>
+							<label for="pla2">Gigabyte aorus RX580 4gb GDDR5</label>
+							<input type="checkbox" name="pla2" value="ok"><br>
+						</div>
+						
+						<div class="coluna_3">
+							<label>R$ 1.383,75</label>
+							<img class="gabinetes" src="./images/placa3.jpg" alt="SAPPHIRE RADEON NITRO+"><br>
+							<label for="pla3">Sapphire Radeon Nitro+ RX580 8gb GDDR5</label>
+							<input type="checkbox" name="pla3" value="ok"><br>
+						</div>
+					</div>
+
+					<h3>Escolha seu SSD:</h3>		
+
+					<div class="linha">	
+						
+                        <div class="coluna_3">
+							<label>R$ 123,90</label>
+							<img class="gabinetes" src="./images/ssd1.jpg " alt="Western Digital"><br>
+							<label for="ssd1">Western Digital - 120GB</label>
+							<input type="checkbox" name="ssd1" value="ok"><br>
+						</div>			
+
+						<div class="coluna_3">
+							<label>R$ 869,13</label>
+							<img class="gabinetes" src="./images/ssd2.jpg" alt="Kingston"><br>
+							<label for="ssd2">Kingston - 960GB</label>
+							<input type="checkbox" name="ssd2" value="ok"><br>
+						</div>
+
+						<div class="coluna_3">
+							<label>R$ 293,36</label>
+							<img class="gabinetes" src="./images/ssd3.jpg" alt="ADATA"><br>
+							<label for="ssd3">ADATA - 240 GB</label>
+							<input type="checkbox" name="ssd3" value="ok"><br>
+						</div>
+					</div>
+					
+					<div>					
+					<input type="submit" value="ENVIAR">
+					</div>					
+			</fieldset>  
+  
+
+</body>
+</html>
